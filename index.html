@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Coffee counter</title>
-    <link href="index.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <p id="token_count">0</p>
-    <button type="button" onClick="addTokens(0.1)">Deposit</button> 
-
-    <div class="middle">
-      <div id="drink_count">0</div>
-      <button type="button" onClick="drink()">Drink</button>
-    </div>
-
-    <script src="index.js"></script>
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Coffee counter</title>
+        <link href="index.css" rel="stylesheet" type="text/css" />
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <div class="right-align">
+            <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">settings</i></a>
+        </div>
+        <div class="row">
+            <div class="col s2 offset-s2 center-align">
+                <div class="card sized grey lighten-5 z-depth-1">
+                    <br>
+                    <i class="material-icons large">local_drink</i>
+                    <p id="drink_count">0</p>
+                    <a class="waves-effect waves-light btn" onClick="drink()">Drink</a>
+                </div>
+            </div>
+            <div class="col s2 offset-s4 center-align">
+                <div class="card sized grey lighten-5 z-depth-1">
+                    <br>
+                    <i class="material-icons large">attach_money</i>
+                    <p id="token_count">0</p>
+                    <a class="waves-effect waves-light btn" onClick="addTokens(0.1)">Deposit</a>
+                </div>
+            </div>
+        </div>
+        <!-- Compiled and minified JavaScript -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+        <script src="index.js"></script>
+    </body>
 </html>
