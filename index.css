@@ -1,35 +1,8 @@
 body {
-  background-color: #2E112D;
-  color: white;
-  font-weight: bold;
-  font-size: 24px;
+  background-color: #fcfcfc;
 }
 
-button {
-    background-color: #C9283E;
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-
-button {
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-}
-
-button:hover {
-    background-color: #F0433A;
-    color: white;
-}
-
-#token_count {
-  font-size: 24px;
-}
-
-.middle {
-  text-align: center;
+.sized {
+  width: 150px;
+  height: 220px;
 }
