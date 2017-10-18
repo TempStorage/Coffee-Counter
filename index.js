@@ -23,11 +23,6 @@ function eraseCookie(name) {
 	createCookie(name,"",-1);
 }
 
-Number.prototype.round = function(places) {
-  return +(Math.round(this + "e+" + places)  + "e-" + places);
-}
-
-
 tokens = readCookie('token')
 price = 0.2
 drinks = readCookie('drink')
@@ -65,7 +60,7 @@ function removeTokens(n) {
       document.getElementById("token_count").innerHTML = tokens;
       return true
     } else {
-      alert("Add more money")
+      Materialize.toast("Add more money", 4000)
       return false
     }
 }
